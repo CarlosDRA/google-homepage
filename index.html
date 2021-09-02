@@ -12,16 +12,21 @@
     <title>Google homepage by Carlos Regalado</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__Text">
-            <a href="#" class="header__link link__text">Gmail</a>
-            <a href="#" class="header__link link__text">Images</a>
+    <nav class="navbar">
+        <div class="navbar__text navbar__content">
+            <a href="#" class="navbar__link link__text">Gmail</a>
+            <a href="#" class="navbar__link link__text">Images</a>
         </div>
-        <div class="header__images">
-            <span class="material-icons header__apps">apps</span>
-            <a href="#" class="header__profile"><img src="./assets/images/Profile-picture.jpg" alt="Profile picture" class="header__profile-picture"></a>
+        <div class="navbar__images navbar__content">
+            <a href="#" class="navbar__apps">
+                <span class="material-icons icon__apps">apps</span>
+            </a>
+            <a href="#" class="navbar__profile">
+                <img src="./assets/images/Profile-picture.jpg" alt="Profile picture" class="navbar__profile-picture">
+            </a>
         </div>
-    </header>
+    </nav>
+
     <main>
         <section class="main__logo">
             <img src="./assets/images/googlelogo_color_272x92dp.png" alt="Google logo" class="google__logo">
@@ -29,14 +34,16 @@
 
         <article class="search__section">
             <form action="">
-                <div class="seach__bar">
-                    <span class="material-icons search__icon">search</span>
+                <div class="search__bar">
+                    <div class="search__icon-div"><span class="material-icons search__icon">search</span></div>
                     <input type="text" class="search__input">
-                    <span class="material-icons mic__icon">mic</span>
+                    <button type="button" class="mic__icon-button">
+                        <span class="material-icons mic__icon">mic</span>
+                    </button>
                 </div>
                 <div class="search__buttons">
-                    <button class="search__button google__button">Google Search</button>
-                    <button class="search__button lucky__button">I'm Feeling Lucky</button>
+                    <button type="button" class="search__button google__button">Google Search</button>
+                    <button type="button" class="search__button lucky__button">I'm Feeling Lucky</button>
                 </div>
             </form>
         </article>
